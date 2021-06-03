@@ -253,6 +253,9 @@ body {
 #header > .topbar .a-link a:hover {
     text-decoration: none;
 }
+#header > .navbar-wjs {
+    margin-bottom: 0;
+}
 #header > .navbar-wjs .navbar-brand {
     height: 80px;
 }
@@ -260,13 +263,28 @@ body {
     line-height: 50px;
     font-size:14px;
 }
+
+/**
+*轮播图区域
+**/
+
+#main_ad .carousel-inner > .item {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+@media (min-width:768px) {
+    #main_ad .carousel-inner > .item {
+        height: 410px;
+    }
+}
+#main_ad .carousel-inner > .item > img {
+    width: 100%;
+}
+
+
+
 /**
 *测试区域
 **/
-section {
-    height: 200px;
-    background-color: #fff;
-}
-section:nth-of-type(2n+1) {
-    background-color: #f5f5f5;
-}
