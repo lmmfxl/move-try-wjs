@@ -12,7 +12,7 @@ $(function () {
                var data = isSmallScreen ? $item.data('xs'):$item.data('lg');
                // $item.css("backgroundImage",'url("'+ data +'")');
             if (isSmallScreen){
-                console.log(1);
+                console.log(data);
                 $item.html('<img src="' + data +'"/>');
             }else {
                 $item.empty();
@@ -22,9 +22,9 @@ $(function () {
 
     }
 
-    $(window).on("resize",changeImage()).trigger("resize");
+    $(window).on("resize",changeImage).trigger('resize');
 
 
 
 
-})
+});

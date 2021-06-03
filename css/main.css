@@ -283,8 +283,54 @@ body {
     width: 100%;
 }
 
+/*
+*网站特色区域
+*/
+#features {
+    padding:50px 0;
+    border-bottom: 1px solid #c0c0c0;
+}
+#features .icon-uniE907::before {
+    content: '\e907';
+}
+#features i {
+    font-size:36px;
+}
+#features > .container > .row > div {
+    margin:20px 0;
+}
+#features > .container > .row a{
+    text-decoration: none;
+    color:#333;
+}
+#features > .container > .row a:hover{
+    color:#e92322;
+}
 
-
-/**
-*测试区域
-**/
+/*
+*立即预约
+*/
+.icon-uniE906::before {
+    content:'\e906';
+}
+.icon-uniE905::before {
+    content:'\e905';
+}
+#appointment {
+    padding:20px;
+    border-bottom: 1px solid #c0c0c0;
+}
+#appointment p {
+    font-sezi:14px;
+    margin-bottom: 0;
+}
+#appointment span ,
+#appointment .pull-left a {
+    color: #e92322;
+}
+#appointment .pull-left a {
+    border-bottom: 1px dashed #e92322;
+}
+#appointment .pull-left a:hover {
+    text-decoration: none;
+}
