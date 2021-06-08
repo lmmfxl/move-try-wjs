@@ -2,6 +2,64 @@
 /**
 *扩展样式
 **/
+.panel-card {
+    border:0;
+    border-radius:0;
+    box-shadow: 1px 1px 3px #ccc inset;
+}
+.panel-card.active {
+    background-color: #E92322;
+}
+.panel-card.disabled {
+    background-color: #e0e0e0;
+}
+.panel-card > .panel-heading {
+    color: #333;
+    float: right;
+    width: 120px;
+    padding:0;
+    height: 150px;
+    border-left:1px dashed #c0c0c0;
+    position: relative;
+    padding:0 20px;
+}
+.panel-card > .panel-heading::before {
+    width: 16px;
+    height: 16px;
+    content:" ";
+    border-radius:8px;
+    position: absolute;
+    background-color: #f0f0f0;
+    top:-8px;
+    left:-8px;
+
+}
+.panel-card > .panel-heading::after {
+    width: 16px;
+    height: 16px;
+    content:" ";
+    border-radius:8px;
+    position: absolute;
+    background-color: #f0f0f0;
+    bottom:-8px;
+    left:-8px;
+    box-shadow: 0px 1px 1px #ccc inset;
+}
+.panel-card > .panel-body {
+    margin-right:120px;
+    height: 150px;
+
+
+}
+.panel-card > .panel-heading + .panel-collapse > .panel-body {
+    border-top-color: #ddd;
+}
+.panel-card > .panel-heading .badge {
+    color: #f5f5f5;
+    background-color: #333;
+}
+
+
  #header .btn-register {
     color: #fff;
     background-color: #e92322;
@@ -356,4 +414,8 @@ body {
 }
 #products > .container > .nav-tabs > li.active{
     border-bottom: 3px solid #E92322;
+}
+
+#products > .container > .tab-content {
+    padding:20px 0;
 }
