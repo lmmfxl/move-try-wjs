@@ -153,6 +153,8 @@ fieldset[disabled] .btn-register.focus {
 .navbar-wjs {
     background-color: #fff;
     border-color: #f5f5f5;
+    top:0;
+    width: 100%;
 }
 .navbar-wjs .navbar-brand {
     color: #777;
@@ -550,8 +552,11 @@ body {
 }
 #partner ul {
     padding:0;
-    margin:0;
+    margin:0 auto;
     list-style: none;
+    width: 818px;
+    position: relative;
+    overflow: hidden;
 }
 #partner ul li {
     float: left;
@@ -561,6 +566,7 @@ body {
 }
 #partner ul li a {
     padding:10px 20px;
+    color:#888;
 }
 #partner a:hover {
     color:#E92322;
